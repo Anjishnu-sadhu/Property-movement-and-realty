@@ -1,0 +1,122 @@
+/* ==========================================================================
+   Features Floating Banner
+   ========================================================================== */
+.features-banner-section {
+  position: relative;
+  z-index: 10;
+  margin-top: -3.8rem; /* Pull up to float seamlessly over the hero base */
+  padding-bottom: 3.5rem;
+}
+
+.features-banner-card {
+  background-color: rgba(254, 250, 242, 0.92);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(220, 185, 120, 0.35);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-float-bar);
+  padding: clamp(1.2rem, 2.2vw, 1.75rem) clamp(1rem, 2.5vw, 2.2rem);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.4rem 0.5rem;
+  position: relative;
+}
+
+/* Vertical Divider between items */
+.feature-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: -0.75rem;
+  top: 15%;
+  height: 70%;
+  width: 1px;
+  background-color: rgba(200, 160, 80, 0.25);
+}
+
+.feature-icon-box {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-gold-mid);
+  transition: var(--transition);
+}
+
+.feature-icon-box svg {
+  width: 32px;
+  height: 32px;
+  stroke: var(--color-gold-mid);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.feature-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.25;
+}
+
+.feature-subtitle {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+  line-height: 1.2;
+  margin-top: 2px;
+}
+
+/* Hover effects */
+.feature-item:hover .feature-icon-box {
+  transform: scale(1.1);
+}
+
+/* Responsive Grid Breakpoints */
+@media screen and (max-width: 1024px) {
+  .features-banner-card {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.75rem 2rem;
+  }
+
+  .feature-item:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .features-banner-section {
+    margin-top: -1.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .features-banner-card {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    padding: 1.25rem;
+  }
+
+  .feature-item::after {
+    display: none !important;
+  }
+
+  .feature-item:not(:last-child) {
+    border-bottom: 1px solid rgba(200, 160, 80, 0.2);
+    padding-bottom: 1rem;
+  }
+}

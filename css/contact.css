@@ -1,0 +1,330 @@
+/* ==========================================================================
+   Contact Section (Let's Connect & Request Property Assistance)
+   Matches Reference Image Layout & Luxury Theme
+   ========================================================================== */
+
+.contact-section {
+  position: relative;
+  background-color: #faf8f5;
+  padding: clamp(4rem, 7vw, 6.5rem) 0;
+  border-top: 1px solid rgba(220, 195, 150, 0.35);
+  overflow: hidden;
+}
+
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1.15fr;
+  gap: clamp(2.5rem, 5vw, 5rem);
+  align-items: start;
+}
+
+/* Left Info Column */
+.contact-info-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-eyebrow {
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  color: var(--color-gold-mid);
+  margin-bottom: 1.25rem;
+}
+
+.contact-heading {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 4.2vw, 3.4rem);
+  font-weight: 700;
+  color: #121820;
+  line-height: 1.15;
+  letter-spacing: -0.5px;
+  margin-bottom: 1.5rem;
+}
+
+.contact-subheading {
+  font-size: clamp(0.95rem, 1.25vw, 1.05rem);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 2.5rem;
+  max-width: 480px;
+}
+
+/* Direct Contact Cards / Channels */
+.contact-channels {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.contact-channel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.contact-channel-left {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.channel-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(223, 168, 61, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-gold-mid);
+  flex-shrink: 0;
+  transition: var(--transition);
+}
+
+.channel-icon svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.channel-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.channel-label {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: #8c8273;
+}
+
+.channel-value {
+  font-size: clamp(1rem, 1.35vw, 1.15rem);
+  font-weight: 600;
+  color: #1a1a1a;
+  transition: color 0.2s ease;
+}
+
+.channel-arrow {
+  color: #8c8273;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.channel-arrow svg {
+  width: 20px;
+  height: 20px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}
+
+.contact-channel-item:hover .channel-icon {
+  background: var(--grad-gold);
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.contact-channel-item:hover .channel-value {
+  color: var(--color-gold-dark);
+}
+
+.contact-channel-item:hover .channel-arrow {
+  color: var(--color-gold-mid);
+  transform: translate(3px, -3px);
+}
+
+/* Right Form Card */
+.contact-form-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: clamp(2rem, 3.8vw, 3rem);
+  box-shadow: 0 16px 40px -10px rgba(27, 21, 10, 0.08), 0 2px 8px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(220, 195, 150, 0.35);
+}
+
+.form-header {
+  margin-bottom: 2rem;
+}
+
+.form-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.6rem, 2.4vw, 2rem);
+  font-weight: 700;
+  color: #121820;
+  margin-bottom: 0.4rem;
+}
+
+.form-desc {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+/* Form Layout */
+.contact-enquiry-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.form-row-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-label span.req {
+  color: #be8b2a;
+  margin-left: 2px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 0.85rem 1.1rem;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  color: #1a1a1a;
+  background-color: #fbfbfb;
+  border: 1.5px solid #e5e7eb;
+  border-radius: 10px;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+  outline: none;
+}
+
+.form-input::placeholder,
+.form-textarea::placeholder {
+  color: #9ca3af;
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  background-color: #ffffff;
+  border-color: var(--color-gold-mid);
+  box-shadow: 0 0 0 4px rgba(223, 168, 61, 0.15);
+}
+
+.form-select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%236b7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  padding-right: 2.5rem;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 110px;
+  line-height: 1.5;
+}
+
+/* Checkbox Consent */
+.form-checkbox-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #6b7280;
+  line-height: 1.5;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 0.25rem;
+}
+
+.form-checkbox-label input[type="checkbox"] {
+  width: 17px;
+  height: 17px;
+  accent-color: var(--color-gold-dark);
+  margin-top: 2px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+/* Submit CTA Button matching dark primary in image */
+.btn-submit-enquiry {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.95rem 2rem;
+  background-color: #121e2b;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: var(--transition);
+  align-self: flex-start;
+  margin-top: 0.5rem;
+}
+
+.btn-submit-enquiry svg {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  fill: none;
+  transition: transform 0.25s ease;
+}
+
+.btn-submit-enquiry:hover {
+  background-color: var(--color-gold-dark);
+  box-shadow: 0 8px 20px -4px rgba(184, 134, 40, 0.4);
+  transform: translateY(-2px);
+}
+
+.btn-submit-enquiry:hover svg {
+  transform: translate(3px, -3px);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints
+   ========================================================================== */
+@media screen and (max-width: 980px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .contact-subheading {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form-row-2col {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+  .contact-form-card {
+    padding: 1.75rem 1.25rem;
+  }
+  .btn-submit-enquiry {
+    width: 100%;
+  }
+}

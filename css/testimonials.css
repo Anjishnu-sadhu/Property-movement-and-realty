@@ -1,0 +1,310 @@
+/* ==========================================================================
+   Testimonials Section
+   Matches Luxury Gold Real Estate Theme & Image Layout
+   Pure HTML & CSS Interactive Carousel (Zero JS, Side Buttons & Dots Active)
+   ========================================================================== */
+
+.testimonials-section {
+  position: relative;
+  background-color: var(--bg-cream);
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0 clamp(4.5rem, 7vw, 6.5rem) 0;
+  overflow: hidden;
+}
+
+/* Subtle architectural city skyline silhouette sketch in background */
+.testimonials-skyline-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: clamp(280px, 36vw, 500px);
+  height: 100%;
+  pointer-events: none;
+  opacity: 0.18;
+  z-index: 1;
+}
+
+.testimonials-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1.65fr;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+/* Left Heading Area */
+.testimonials-header {
+  max-width: 400px;
+}
+
+.testimonials-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold-mid);
+  margin-bottom: 0.85rem;
+}
+
+.testimonials-eyebrow-line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--grad-gold);
+  border-radius: 2px;
+}
+
+.testimonials-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.2rem, 3.8vw, 3rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #121820;
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.5px;
+}
+
+.testimonials-desc {
+  font-size: clamp(0.92rem, 1.25vw, 1.05rem);
+  color: var(--color-text-muted);
+  line-height: 1.6;
+}
+
+/* ==========================================================================
+   Pure CSS Carousel Mechanism using Radio Inputs
+   ========================================================================== */
+.testimonial-carousel-box {
+  position: relative;
+  width: 100%;
+}
+
+.testimonial-carousel-box input[type="radio"] {
+  display: none;
+}
+
+/* Carousel layout wrapper */
+.testimonial-carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Card stage viewport */
+.testimonial-cards-viewport {
+  position: relative;
+  width: 100%;
+  min-height: 220px;
+  margin: 0 clamp(0.5rem, 1.5vw, 1.5rem);
+}
+
+/* Individual Testimonial Cards */
+.testimonial-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 16px 36px -8px rgba(27, 21, 10, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(220, 195, 150, 0.32);
+  padding: clamp(1.4rem, 2.5vw, 2.2rem);
+  display: flex;
+  align-items: center;
+  gap: clamp(1.2rem, 2.2vw, 2rem);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(25px);
+  pointer-events: none;
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s ease;
+}
+
+/* Visible Slide State */
+#t-slide-1:checked ~ .testimonial-carousel-wrapper .card-1,
+#t-slide-2:checked ~ .testimonial-carousel-wrapper .card-2,
+#t-slide-3:checked ~ .testimonial-carousel-wrapper .card-3 {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+  pointer-events: auto;
+  position: relative;
+}
+
+/* Avatar circular frame with glowing ring */
+.client-avatar-wrap {
+  width: clamp(75px, 8.5vw, 95px);
+  height: clamp(75px, 8.5vw, 95px);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid rgba(220, 168, 61, 0.4);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  background-color: #f3f4f6;
+}
+
+.client-avatar-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client-quote-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* 5 Gold Stars Rating */
+.star-rating {
+  display: flex;
+  gap: 4px;
+  margin-bottom: 0.65rem;
+}
+
+.star-rating svg {
+  width: 18px;
+  height: 18px;
+  fill: #dfa83d;
+}
+
+.quote-text {
+  font-size: clamp(0.92rem, 1.2vw, 1.05rem);
+  color: #1f2937;
+  line-height: 1.6;
+  font-weight: 500;
+  margin-bottom: 0.85rem;
+}
+
+.client-name {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #121820;
+  line-height: 1.2;
+}
+
+.client-role {
+  font-size: 0.82rem;
+  color: var(--color-gold-mid);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Carousel Prev/Next Arrow Labels
+   ========================================================================== */
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 1px solid rgba(184, 134, 40, 0.35);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  display: none; /* Controlled dynamically by radio state below */
+  align-items: center;
+  justify-content: center;
+  color: #374151;
+  cursor: pointer;
+  flex-shrink: 0;
+  transition: var(--transition);
+  user-select: none;
+  z-index: 5;
+}
+
+.carousel-btn svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  stroke-width: 2.5;
+  fill: none;
+}
+
+.carousel-btn:hover {
+  background: var(--grad-gold);
+  border-color: transparent;
+  color: #ffffff;
+  box-shadow: var(--shadow-btn);
+  transform: scale(1.08);
+}
+
+/* Show the exact active arrow label based on checked radio */
+#t-slide-1:checked ~ .testimonial-carousel-wrapper .prev-for-1,
+#t-slide-1:checked ~ .testimonial-carousel-wrapper .next-for-1,
+#t-slide-2:checked ~ .testimonial-carousel-wrapper .prev-for-2,
+#t-slide-2:checked ~ .testimonial-carousel-wrapper .next-for-2,
+#t-slide-3:checked ~ .testimonial-carousel-wrapper .prev-for-3,
+#t-slide-3:checked ~ .testimonial-carousel-wrapper .next-for-3 {
+  display: flex;
+}
+
+/* ==========================================================================
+   Pagination Indicator Dots
+   ========================================================================== */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 1.25rem;
+}
+
+.dot-label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #d1d5db;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.dot-label:hover {
+  background-color: #9ca3af;
+}
+
+#t-slide-1:checked ~ .carousel-dots .dot-1,
+#t-slide-2:checked ~ .carousel-dots .dot-2,
+#t-slide-3:checked ~ .carousel-dots .dot-3 {
+  background-color: var(--color-gold-mid);
+  width: 24px;
+  border-radius: 10px;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints for Testimonials
+   ========================================================================== */
+@media screen and (max-width: 960px) {
+  .testimonials-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .testimonials-header {
+    max-width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .testimonial-cards-viewport {
+    margin: 0;
+  }
+  .testimonial-card {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem;
+    gap: 1rem;
+  }
+  .star-rating {
+    justify-content: center;
+  }
+  .carousel-btn {
+    width: 36px;
+    height: 36px;
+  }
+  .carousel-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+}

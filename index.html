@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Property Movement Realty - Luxury Real Estate</title>
+  
+  <!-- Master Stylesheet aggregating all section CSS files -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="site-header">
+    <div class="container nav-container">
+      
+      <!-- Brand Logo (Gold Towers Icon) -->
+      <a href="#" class="brand-logo" aria-label="Property Movement Realty Home">
+        <div class="logo-graphic">
+          <img src="assets/logo.png" alt="Property Movement Realty Logo" class="logo-img">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Property Movement</span>
+          <span class="brand-tagline">Realty</span>
+        </div>
+      </a>
+
+      <!-- Pure CSS Mobile Hamburger Trigger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigation Menu Overlay Backdrop for Mobile -->
+      <label for="nav-toggle" class="nav-backdrop" aria-hidden="true"></label>
+
+      <!-- Navigation Menu Links -->
+      <nav class="nav-menu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#properties" class="nav-link">Projects</a>
+        <a href="#about" class="nav-link">About Us</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <div class="nav-menu-mobile-action">
+          <a href="#contact" class="btn-quote mobile-quote-btn">
+            <span>Get a Quote</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+      </nav>
+
+      <!-- Quote Action Button (Desktop) -->
+      <div class="nav-actions">
+        <a href="#contact" class="btn-quote">
+          <span>Get a Quote</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         Hero Section
+         ========================================================================== -->
+    <section class="hero-section" id="home">
+      <div class="hero-bg-shapes" aria-hidden="true">
+        <svg class="gold-ribbon-left" viewBox="0 0 500 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-50 0C120 180 220 320 80 520C-20 660 30 760 120 840" stroke="url(#ribbonGrad1)" stroke-width="50" stroke-linecap="round" opacity="0.45"/>
+          <path d="M-80 60C100 240 180 380 40 580C-50 710 10 790 90 850" stroke="url(#ribbonGrad2)" stroke-width="24" stroke-linecap="round" opacity="0.6"/>
+          <path d="M-30 140C140 300 160 450 60 620" stroke="#f6e7c1" stroke-width="6" stroke-linecap="round" opacity="0.75"/>
+          <defs>
+            <linearGradient id="ribbonGrad1" x1="0" y1="0" x2="300" y2="800" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#f8e7b9"/>
+              <stop offset="0.4" stop-color="#dfa83d"/>
+              <stop offset="0.8" stop-color="#b68322"/>
+              <stop offset="1" stop-color="#7a5210"/>
+            </linearGradient>
+            <linearGradient id="ribbonGrad2" x1="0" y1="0" x2="250" y2="800" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#dfa83d"/>
+              <stop offset="0.6" stop-color="#b68322"/>
+              <stop offset="1" stop-color="#fdf3db"/>
+            </linearGradient>
+          </defs>
+        </svg>
+
+        <svg class="gold-ribbon-bottom" viewBox="0 0 500 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-30 280C90 260 210 220 320 270C380 295 440 280 490 250" stroke="url(#ribbonGrad1)" stroke-width="28" stroke-linecap="round" opacity="0.4"/>
+          <path d="M-20 295C100 275 220 240 330 285" stroke="#be8b2a" stroke-width="5" stroke-linecap="round" opacity="0.6"/>
+        </svg>
+      </div>
+
+      <div class="hero-image-backdrop" role="img" aria-label="Modern luxury villa with illuminated swimming pool at twilight"></div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-eyebrow">
+            <span>Building Better Tomorrow</span>
+            <span class="eyebrow-line"></span>
+          </div>
+
+          <h1 class="hero-title">
+            Transform Your Home
+            <span>With Expert</span>
+            <span class="title-accent">Real Estate Services</span>
+          </h1>
+
+          <p class="hero-description">
+            Find your dream property with trust, transparency and the best deals.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#properties" class="btn-primary-gold">
+              <span>Explore Properties</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Floating Highlights Bar
+         ========================================================================== -->
+    <section class="features-banner-section" aria-label="Key Benefits">
+      <div class="container">
+        <div class="features-banner-card">
+          <div class="feature-item">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span class="feature-title">Premium</span>
+              <span class="feature-subtitle">Properties</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span class="feature-title">Trusted &amp;</span>
+              <span class="feature-subtitle">Transparent</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M11 17l-1.5-1.5a3.5 3.5 0 0 1 0-5l5-5a3.5 3.5 0 0 1 5 5L18 12"/>
+                <path d="M13 7l-5 5a3.5 3.5 0 0 0 0 5l1.5 1.5"/>
+                <path d="M2 13l3-3"/>
+                <path d="M19 16l3 3"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span class="feature-title">Expert Support</span>
+              <span class="feature-subtitle">Always</span>
+            </div>
+          </div>
+
+          <div class="feature-item">
+            <div class="feature-icon-box">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 3h12l4 7-10 11L2 10l4-7z"/>
+                <path d="M2 10h20"/>
+                <path d="M12 21L7.5 10"/>
+                <path d="M12 21l4.5-11"/>
+                <path d="M6 3l1.5 7"/>
+                <path d="M18 3l-1.5 7"/>
+              </svg>
+            </div>
+            <div class="feature-text">
+              <span class="feature-title">Best Prices</span>
+              <span class="feature-subtitle">Guaranteed</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Featured Properties Section
+         ========================================================================== -->
+    <section class="properties-section" id="properties">
+      <div class="container">
+        <div class="properties-header">
+          <div class="properties-header-content">
+            <div class="properties-eyebrow">
+              <span class="properties-eyebrow-line"></span>
+              <span>Our Properties</span>
+            </div>
+            <h2 class="properties-title">
+              Featured <span class="title-gold">Properties</span>
+            </h2>
+            <p class="properties-subtitle">
+              Explore our handpicked properties in the most desirable locations.
+            </p>
+          </div>
+
+          <a href="#all-properties" class="btn-view-all">
+            <span>View All Properties</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="properties-grid">
+          <!-- Card 1 -->
+          <article class="property-card">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=700&q=80" alt="Luxury Villa exterior at sunset">
+              <span class="property-badge">For Sale</span>
+              <button class="property-action-btn" aria-label="Add to favorites">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="property-details">
+              <div class="property-top-row">
+                <h3 class="property-name">Luxury Villa</h3>
+                <span class="property-price">₹1.35 Cr</span>
+              </div>
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Zirakpur, Punjab</span>
+              </div>
+              <div class="property-specs">
+                <span class="spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/>
+                  </svg>
+                  <span>4 BHK</span>
+                </span>
+                <span class="spec-divider">|</span>
+                <span class="spec-item">
+                  <span>3200 Sq.Ft</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="property-card">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=700&q=80" alt="Premium modern apartment building">
+              <span class="property-badge">For Sale</span>
+              <button class="property-action-btn" aria-label="Add to favorites">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="property-details">
+              <div class="property-top-row">
+                <h3 class="property-name">Premium Apartment</h3>
+                <span class="property-price">₹85 Lakh</span>
+              </div>
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Mohali, Punjab</span>
+              </div>
+              <div class="property-specs">
+                <span class="spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/>
+                  </svg>
+                  <span>3 BHK</span>
+                </span>
+                <span class="spec-divider">|</span>
+                <span class="spec-item">
+                  <span>1950 Sq.Ft</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="property-card">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=700&q=80" alt="Modern commercial glass architectural building">
+              <span class="property-badge">For Rent</span>
+              <button class="property-action-btn" aria-label="Premium listing badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M6 3h12l4 7-10 11L2 10l4-7z"/>
+                </svg>
+              </button>
+            </div>
+            <div class="property-details">
+              <div class="property-top-row">
+                <h3 class="property-name">Commercial Space</h3>
+                <span class="property-price">₹75,000 <span class="price-period">/ Month</span></span>
+              </div>
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Chandigarh</span>
+              </div>
+              <div class="property-specs">
+                <span class="spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                  </svg>
+                  <span>1200 Sq.Ft</span>
+                </span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="property-card">
+            <div class="property-media">
+              <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=700&q=80" alt="Modern contemporary residential home">
+              <span class="property-badge">For Sale</span>
+              <button class="property-action-btn" aria-label="Add to favorites">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="property-details">
+              <div class="property-top-row">
+                <h3 class="property-name">Modern Home</h3>
+                <span class="property-price">₹2.10 Cr</span>
+              </div>
+              <div class="property-location">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Panchkula, Haryana</span>
+              </div>
+              <div class="property-specs">
+                <span class="spec-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 10.5L12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1v-9.5z"/>
+                  </svg>
+                  <span>5 BHK</span>
+                </span>
+                <span class="spec-divider">|</span>
+                <span class="spec-item">
+                  <span>4200 Sq.Ft</span>
+                </span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Services Section
+         ========================================================================== -->
+    <section class="services-showcase" id="services">
+      <div class="services-bg-backdrop" role="img" aria-label="Luxury sunlit living room with modern sofa"></div>
+
+      <div class="container services-container">
+        <div class="services-intro">
+          <div class="services-eyebrow">
+            <span class="services-eyebrow-line"></span>
+            <span>Our Services</span>
+          </div>
+          <h2 class="services-heading">
+            A property <span class="heading-gold">for every purpose.</span>
+          </h2>
+          <p class="services-lead">
+            From buying to investing, we provide complete real estate solutions under one roof.
+          </p>
+          <a href="#contact" class="btn-explore-services">
+            <span>Enquire Now</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+        <div class="services-card-grid">
+          <!-- 1. Residential: Clean rounded modern house with door & roof -->
+          <div class="service-mini-card">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 14.5L16 5.5l11 9V26a1.5 1.5 0 0 1-1.5 1.5H6.5A1.5 1.5 0 0 1 5 26V14.5z"/>
+                <path d="M12 27.5V17.5a1.5 1.5 0 0 1 1.5-1.5h5a1.5 1.5 0 0 1 1.5 1.5v10"/>
+              </svg>
+            </div>
+            <span class="service-card-title">Residential</span>
+          </div>
+
+          <!-- 2. Commercial: Modern Multi-Storey Commercial Building Skyscraper -->
+          <div class="service-mini-card">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Ground line -->
+                <path d="M4 27h24"/>
+                <!-- Main central commercial tower -->
+                <path d="M9 27V6a1.5 1.5 0 0 1 1.5-1.5h11A1.5 1.5 0 0 1 23 6v21"/>
+                <!-- Architectural entrance doorway -->
+                <path d="M14 27v-4h4v4"/>
+                <!-- Office facade window rows -->
+                <line x1="13" y1="9" x2="15" y2="9"/>
+                <line x1="17" y1="9" x2="19" y2="9"/>
+                <line x1="13" y1="13.5" x2="15" y2="13.5"/>
+                <line x1="17" y1="13.5" x2="19" y2="13.5"/>
+                <line x1="13" y1="18" x2="15" y2="18"/>
+                <line x1="17" y1="18" x2="19" y2="18"/>
+                <!-- Side building wing extension -->
+                <path d="M5 27V14a1 1 0 0 1 1-1h3"/>
+                <path d="M23 16h3a1 1 0 0 1 1 1v10"/>
+              </svg>
+            </div>
+            <span class="service-card-title">Commercial</span>
+          </div>
+
+          <!-- 3. Industrial: Precision factory saw-tooth silhouette with tall chimney stack -->
+          <div class="service-mini-card">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4.5 26.5h23"/>
+                <path d="M6 26.5V14l6 4V12l7 4.5V8.5h4.5v18"/>
+                <circle cx="16" cy="21.5" r="1" fill="currentColor"/>
+                <circle cx="20.5" cy="21.5" r="1" fill="currentColor"/>
+              </svg>
+            </div>
+            <span class="service-card-title">Industrial</span>
+          </div>
+
+          <!-- 4. Farmer Land: Agriculture Tractor Icon -->
+          <div class="service-mini-card">
+            <div class="service-card-icon">
+              <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Large rear wheel with center hub -->
+                <circle cx="9" cy="22" r="5.5"/>
+                <circle cx="9" cy="22" r="1.5" fill="currentColor"/>
+                <!-- Front smaller wheel with center hub -->
+                <circle cx="24.5" cy="23.5" r="4"/>
+                <circle cx="24.5" cy="23.5" r="1.2" fill="currentColor"/>
+                <!-- Tractor hood, engine block and front grille -->
+                <path d="M14 20h6.5l4-3v-4.5h-8.5"/>
+                <!-- Vertical exhaust stack / chimney -->
+                <line x1="22" y1="12.5" x2="22" y2="7.5"/>
+                <!-- Cabin structure, roof canopy and seat back -->
+                <path d="M9 16.5V9.5h7.5l1.5 7"/>
+                <line x1="7.5" y1="9.5" x2="18" y2="9.5"/>
+                <!-- Steering wheel bar -->
+                <line x1="15.5" y1="12.5" x2="17" y2="14"/>
+              </svg>
+            </div>
+            <span class="service-card-title">Farmer Land</span>
+          </div>
+        </div>
+
+        <div class="services-room-space" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         About Us Section
+         ========================================================================== -->
+    <section class="about-section" id="about">
+      <svg class="about-bg-ribbon" viewBox="0 0 500 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M0 380C120 320 220 200 240 100C260 0 350 -20 480 30" stroke="url(#goldGrad)" stroke-width="12" stroke-linecap="round"/>
+      </svg>
+
+      <div class="container about-container">
+        <div class="about-image-wrapper">
+          <div class="about-image-mask">
+            <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80" alt="Modern luxury residential buildings with lush green landscape">
+          </div>
+          <div class="about-arc-accent" aria-hidden="true"></div>
+        </div>
+
+        <div class="about-content">
+          <div class="about-eyebrow">
+            <span class="about-eyebrow-line"></span>
+            <span>About Us</span>
+          </div>
+
+          <h2 class="about-title">
+            Your Trusted Real<br>Estate Partner
+          </h2>
+
+          <p class="about-desc">
+            With years of experience in the real estate industry, we are committed to helping you find the perfect property that fits your lifestyle and investment goals.
+          </p>
+
+          <a href="#about-info-modal" class="btn-learn-more" aria-label="Learn more about our approach">
+            <span>Learn More</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+
+          <div class="about-stats-row">
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/>
+                  <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/>
+                  <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/>
+                  <path d="M10 6h4"/>
+                  <path d="M10 10h4"/>
+                  <path d="M10 14h4"/>
+                  <path d="M10 18h4"/>
+                </svg>
+              </div>
+              <span class="stat-number">500+</span>
+              <span class="stat-label">Properties Sold</span>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <span class="stat-number">1000+</span>
+              <span class="stat-label">Happy Clients</span>
+            </div>
+
+            <div class="stat-item">
+              <div class="stat-icon">
+                <svg viewBox="0 0 24 24">
+                  <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/>
+                  <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/>
+                  <path d="M4 22h16"/>
+                  <path d="M10 14.66V17c0 .55-.45 1-1 1H7v4h10v-4h-2c-.55 0-1-.45-1-1v-2.34"/>
+                  <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/>
+                </svg>
+              </div>
+              <span class="stat-number">10+</span>
+              <span class="stat-label">Years Experience</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Testimonials Section (Interactive Pure CSS Slider)
+         ========================================================================== -->
+    <section class="testimonials-section" id="testimonials">
+      <svg class="testimonials-skyline-bg" viewBox="0 0 450 300" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M10 300V210L40 180L70 210V300" stroke="#be8b2a" stroke-width="1.2"/>
+        <path d="M70 300V130L110 80L150 130V300" stroke="#be8b2a" stroke-width="1.4"/>
+        <path d="M150 300V160L190 120L230 160V300" stroke="#be8b2a" stroke-width="1.2"/>
+        <path d="M230 300V90L275 40L320 90V300" stroke="#be8b2a" stroke-width="1.5"/>
+        <path d="M320 300V140L360 100L400 140V300" stroke="#be8b2a" stroke-width="1.2"/>
+        <path d="M400 300V200L430 170L460 200V300" stroke="#be8b2a" stroke-width="1.2"/>
+        <line x1="90" y1="120" x2="130" y2="120" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+        <line x1="90" y1="160" x2="130" y2="160" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+        <line x1="90" y1="200" x2="130" y2="200" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+        <line x1="250" y1="80" x2="300" y2="80" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+        <line x1="250" y1="130" x2="300" y2="130" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+        <line x1="250" y1="180" x2="300" y2="180" stroke="#be8b2a" stroke-width="1" stroke-dasharray="2 3"/>
+      </svg>
+
+      <div class="container testimonials-container">
+        <div class="testimonials-header">
+          <div class="testimonials-eyebrow">
+            <span class="testimonials-eyebrow-line"></span>
+            <span>What Our Clients Say</span>
+          </div>
+          <h2 class="testimonials-title">Testimonials</h2>
+          <p class="testimonials-desc">
+            Real stories from happy homeowners and investors.
+          </p>
+        </div>
+
+        <!-- Pure CSS Interactive Carousel -->
+        <div class="testimonial-carousel-box">
+          
+          <!-- Hidden Radio controllers -->
+          <input type="radio" name="testimonial-slider" id="t-slide-1" checked>
+          <input type="radio" name="testimonial-slider" id="t-slide-2">
+          <input type="radio" name="testimonial-slider" id="t-slide-3">
+
+          <div class="testimonial-carousel-wrapper">
+            
+            <!-- Left Prev Side Buttons (Labels targeting appropriate radio) -->
+            <label for="t-slide-3" class="carousel-btn prev-for-1" aria-label="Go to Slide 3">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </label>
+            <label for="t-slide-1" class="carousel-btn prev-for-2" aria-label="Go to Slide 1">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </label>
+            <label for="t-slide-2" class="carousel-btn prev-for-3" aria-label="Go to Slide 2">
+              <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+            </label>
+
+            <!-- Card Viewport with Testimonial Slides -->
+            <div class="testimonial-cards-viewport">
+              
+              <!-- Slide 1: Rohan Sharma (Matches image) -->
+              <div class="testimonial-card card-1">
+                <div class="client-avatar-wrap">
+                  <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" alt="Rohan Sharma portrait">
+                </div>
+                <div class="client-quote-content">
+                  <div class="star-rating" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  </div>
+                  <p class="quote-text">
+                    &ldquo;An amazing experience! The team is professional, responsive and truly cares about their clients.&rdquo;
+                  </p>
+                  <h3 class="client-name">Rohan Sharma</h3>
+                  <span class="client-role">Happy Homeowner</span>
+                </div>
+              </div>
+
+              <!-- Slide 2: Priya Kapoor -->
+              <div class="testimonial-card card-2">
+                <div class="client-avatar-wrap">
+                  <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=80" alt="Priya Kapoor portrait">
+                </div>
+                <div class="client-quote-content">
+                  <div class="star-rating" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  </div>
+                  <p class="quote-text">
+                    &ldquo;Finding a commercial space in Chandigarh was effortless with Property Movement. Highly recommended!&rdquo;
+                  </p>
+                  <h3 class="client-name">Priya Kapoor</h3>
+                  <span class="client-role">Business Owner</span>
+                </div>
+              </div>
+
+              <!-- Slide 3: Amit Verma -->
+              <div class="testimonial-card card-3">
+                <div class="client-avatar-wrap">
+                  <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80" alt="Amit Verma portrait">
+                </div>
+                <div class="client-quote-content">
+                  <div class="star-rating" aria-label="5 out of 5 stars">
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                    <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  </div>
+                  <p class="quote-text">
+                    &ldquo;Transparent guidance from start to finish. Their legal advisory saved us immense time and paperwork.&rdquo;
+                  </p>
+                  <h3 class="client-name">Amit Verma</h3>
+                  <span class="client-role">Property Investor</span>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Right Next Side Buttons (Labels targeting appropriate radio) -->
+            <label for="t-slide-2" class="carousel-btn next-for-1" aria-label="Go to Slide 2">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </label>
+            <label for="t-slide-3" class="carousel-btn next-for-2" aria-label="Go to Slide 3">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </label>
+            <label for="t-slide-1" class="carousel-btn next-for-3" aria-label="Go to Slide 1">
+              <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+            </label>
+
+          </div>
+
+          <!-- Pagination Indicator Dots (clickable labels) -->
+          <div class="carousel-dots" aria-label="Slide indicators">
+            <label for="t-slide-1" class="dot-label dot-1" aria-label="Slide 1"></label>
+            <label for="t-slide-2" class="dot-label dot-2" aria-label="Slide 2"></label>
+            <label for="t-slide-3" class="dot-label dot-3" aria-label="Slide 3"></label>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         Contact Section (Let's Connect & Request Property Assistance)
+         ========================================================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container contact-container">
+        
+        <!-- Left Column: Let's Connect -->
+        <div class="contact-info-col">
+          <span class="contact-eyebrow">Let's Connect</span>
+          <h2 class="contact-heading">Your property search starts with a hello.</h2>
+          <p class="contact-subheading">
+            Share your requirements with us, or reach out directly. We're here to help you take the next step.
+          </p>
+
+          <div class="contact-channels">
+            <a href="tel:+918054367557" class="contact-channel-item" aria-label="Call our helpline +91 8054367557">
+              <div class="contact-channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-label">Call Our Helpline</span>
+                  <span class="channel-value">+91 8054367557</span>
+                </div>
+              </div>
+              <div class="channel-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </div>
+            </a>
+
+            <a href="mailto:info@propertymovement.in" class="contact-channel-item" aria-label="Email our team info@propertymovement.in">
+              <div class="contact-channel-left">
+                <div class="channel-icon">
+                  <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                  </svg>
+                </div>
+                <div class="channel-text">
+                  <span class="channel-label">Email Our Team</span>
+                  <span class="channel-value">info@propertymovement.in</span>
+                </div>
+              </div>
+              <div class="channel-arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24">
+                  <line x1="7" y1="17" x2="17" y2="7"/>
+                  <polyline points="7 7 17 7 17 17"/>
+                </svg>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Column: Request Property Assistance Form -->
+        <div class="contact-form-card">
+          <div class="form-header">
+            <h3 class="form-title">Request property assistance</h3>
+            <p class="form-desc">Let us know what you have in mind.</p>
+          </div>
+
+          <form class="contact-enquiry-form" action="#contact" method="get">
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="full-name" class="form-label">Full name <span class="req">*</span></label>
+                <input type="text" id="full-name" name="name" class="form-input" placeholder="Your full name" required>
+              </div>
+              <div class="form-group">
+                <label for="phone-number" class="form-label">Phone number <span class="req">*</span></label>
+                <input type="tel" id="phone-number" name="phone" class="form-input" placeholder="Your phone number" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email-address" class="form-label">Email address</label>
+              <input type="email" id="email-address" name="email" class="form-input" placeholder="you@example.com">
+            </div>
+
+            <div class="form-group">
+              <label for="property-category" class="form-label">Property category <span class="req">*</span></label>
+              <select id="property-category" name="category" class="form-select" required>
+                <option value="" disabled selected>Select a property category</option>
+                <option value="residential">Residential</option>
+                <option value="commercial">Commercial</option>
+                <option value="industrial">Industrial</option>
+                <option value="farmer-land">Farmer Land</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="your-requirements" class="form-label">Your requirements <span class="req">*</span></label>
+              <textarea id="your-requirements" name="requirements" class="form-textarea" placeholder="Tell us your preferred location, property type, and what you're looking for." required></textarea>
+            </div>
+
+            <label class="form-checkbox-label">
+              <input type="checkbox" name="consent" required checked>
+              <span>I agree to be contacted by Property Movement Realty about my enquiry. My details will be used to respond to this request and will not be displayed publicly.</span>
+            </label>
+
+            <button type="submit" class="btn-submit-enquiry">
+              <span>Enquire Now</span>
+              <svg viewBox="0 0 24 24">
+                <line x1="7" y1="17" x2="17" y2="7"/>
+                <polyline points="7 7 17 7 17 17"/>
+              </svg>
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer class="site-footer">
+    
+    <div class="footer-wave-wrap" aria-hidden="true">
+      <svg viewBox="0 0 1440 90" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 45C320 85 640 10 960 45C1200 70 1340 50 1440 35V90H0V45Z" fill="#0f1319"/>
+        <path d="M0 45C320 85 640 10 960 45C1200 70 1340 50 1440 35" stroke="url(#goldGrad)" stroke-width="2.5"/>
+      </svg>
+    </div>
+
+    <svg class="footer-skyline-bg" viewBox="0 0 500 240" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="skylineGrad" x1="250" y1="0" x2="250" y2="240" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#dfa83d" stop-opacity="0.85"/>
+          <stop offset="0.6" stop-color="#be8b2a" stop-opacity="0.4"/>
+          <stop offset="1" stop-color="#0f1319" stop-opacity="0"/>
+        </linearGradient>
+      </defs>
+      <path d="M20 240V160L40 140L60 160V240" stroke="url(#skylineGrad)" stroke-width="1.5" fill="none"/>
+      <path d="M60 240V110L90 70L120 110V240" stroke="url(#skylineGrad)" stroke-width="1.8" fill="none"/>
+      <path d="M120 240V140L150 110L180 140V240" stroke="url(#skylineGrad)" stroke-width="1.5" fill="none"/>
+      <path d="M180 240V80L220 30L260 80V240" stroke="url(#skylineGrad)" stroke-width="2" fill="none"/>
+      <path d="M260 240V130L295 95L330 130V240" stroke="url(#skylineGrad)" stroke-width="1.5" fill="none"/>
+      <path d="M330 240V60L375 10L420 60V240" stroke="url(#skylineGrad)" stroke-width="2.2" fill="none"/>
+      <path d="M420 240V120L455 85L490 120V240" stroke="url(#skylineGrad)" stroke-width="1.5" fill="none"/>
+      <circle cx="220" cy="90" r="1.5" fill="#dfa83d"/>
+      <circle cx="220" cy="120" r="1.5" fill="#dfa83d"/>
+      <circle cx="220" cy="150" r="1.5" fill="#dfa83d"/>
+      <circle cx="375" cy="80" r="2" fill="#dfa83d"/>
+      <circle cx="375" cy="115" r="2" fill="#dfa83d"/>
+      <circle cx="375" cy="150" r="2" fill="#dfa83d"/>
+      <circle cx="375" cy="185" r="2" fill="#dfa83d"/>
+    </svg>
+
+    <div class="container footer-container">
+      
+      <div class="footer-main-grid">
+        
+        <!-- Col 1: Brand & Socials -->
+        <div class="footer-brand">
+          <a href="#" class="brand-logo" aria-label="Property Movement Realty Home">
+            <div class="logo-graphic">
+              <img src="assets/logo.png" alt="Property Movement Realty Logo" class="logo-img">
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Property Movement</span>
+              <span class="brand-tagline">Realty</span>
+            </div>
+          </a>
+
+          <p class="footer-bio">
+            Building dreams, creating value.<br>Your trusted real estate partner.
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="footer-divider-col">
+          <h3 class="footer-col-title">Quick Links</h3>
+          <ul class="footer-link-list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#properties">Properties</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Property Categories -->
+        <div class="footer-divider-col">
+          <h3 class="footer-col-title">Property Categories</h3>
+          <ul class="footer-link-list">
+            <li><a href="#services">Residential</a></li>
+            <li><a href="#services">Commercial</a></li>
+            <li><a href="#services">Industrial</a></li>
+            <li><a href="#services">Farmer Land</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Contact Us -->
+        <div class="footer-divider-col">
+          <h3 class="footer-col-title">Contact Us</h3>
+          <ul class="footer-contact-list">
+            <li class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              <a href="tel:+918054367557">+91 80543 67557</a>
+            </li>
+            <li class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              <a href="mailto:info@propertymovement.in">info@propertymovement.in</a>
+            </li>
+            <li class="contact-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                <circle cx="12" cy="10" r="3"/>
+              </svg>
+              <span>Zirakpur, Punjab</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 5: Get In Touch CTA -->
+        <div class="footer-cta-col">
+          <a href="#contact" class="btn-footer-touch">
+            <span>Get In Touch</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+        </div>
+
+      </div>
+
+      <!-- ==========================================================================
+           Policy Links Bar
+           ========================================================================== -->
+      <div class="footer-legal-bar">
+        <ul class="policy-links-list">
+          <li><a href="#privacy-policy">Privacy Policy</a></li>
+          <li><a href="#terms-of-service">Terms of Service</a></li>
+          <li><a href="#refund-policy">Refund Policy</a></li>
+          <li><a href="#rcs-policy">RCS Policy</a></li>
+          <li><a href="#whatsapp-policy">WhatsApp Opt-in &amp; Opt-out Policy</a></li>
+        </ul>
+      </div>
+
+      <!-- Copyright Bottom Bar -->
+      <div class="footer-bottom-bar">
+        <p>&copy; 2026 Property Movement Realty. All Rights Reserved.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       Floating WhatsApp Button Widget
+       ========================================================================== -->
+  <aside class="whatsapp-float-widget" aria-label="Contact us on WhatsApp">
+    <div class="whatsapp-tooltip">Chat with us on WhatsApp</div>
+    <a href="https://wa.me/918054367557?text=Hello%20Property%20Movement%20Realty,%20I%20would%20like%20to%20enquire%20about%20property%20consultancy." 
+       class="whatsapp-btn" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       aria-label="Open WhatsApp conversation with Property Movement Realty">
+      <svg viewBox="0 0 32 32">
+        <path d="M16 2.5C8.544 2.5 2.5 8.544 2.5 16c0 2.592.736 5.016 2.016 7.08L2.5 29.5l6.648-2.016A13.435 13.435 0 0 0 16 29.5c7.456 0 13.5-6.044 13.5-13.5S23.456 2.5 16 2.5zm0 24.64a11.08 11.08 0 0 1-5.712-1.584l-.408-.24-4.224 1.28 1.304-4.104-.264-.424A11.096 11.096 0 0 1 4.88 16c0-6.136 4.984-11.12 11.12-11.12s11.12 4.984 11.12 11.12-4.984 11.14-11.12 11.14zm6.096-8.328c-.336-.168-1.984-.984-2.288-1.096-.312-.112-.536-.168-.768.168-.224.336-.88 1.096-1.08 1.32-.192.232-.392.256-.728.088-.336-.168-1.424-.528-2.712-1.68-1.008-.896-1.688-2.008-1.888-2.344-.192-.336-.024-.52.144-.688.152-.152.336-.392.504-.592.168-.192.224-.336.336-.56.112-.224.056-.416-.024-.584-.088-.168-.768-1.856-1.056-2.544-.28-.672-.56-.584-.768-.592h-.656c-.224 0-.584.088-.896.416-.312.336-1.184 1.16-1.184 2.824s1.216 3.272 1.384 3.496c.168.232 2.392 3.656 5.8 5.128.808.352 1.44.56 1.936.72.816.256 1.56.224 2.144.136.656-.096 1.984-.816 2.264-1.6.28-.792.28-1.472.192-1.608-.088-.144-.312-.232-.648-.4z"/>
+      </svg>
+    </a>
+  </aside>
+
+  <!-- ==========================================================================
+       Pure CSS Privacy Policy Modal Window
+       ========================================================================== -->
+  <aside class="policy-modal" id="privacy-policy" role="dialog" aria-modal="true" aria-labelledby="privacy-modal-title">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal"></a>
+    
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-header">
+        <div class="modal-eyebrow">
+          <svg viewBox="0 0 24 24" style="fill:var(--color-gold-mid);"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/></svg>
+          <span>Privacy &amp; Data</span>
+        </div>
+        <h2 class="modal-title" id="privacy-modal-title">Privacy Policy</h2>
+      </div>
+
+      <div class="modal-body">
+        <p class="policy-intro">
+          Property Movement Realty respects your privacy. This Privacy Policy explains what information we collect when you use our website and enquiry services, how we use it, and the choices you have. By submitting an enquiry or contacting us, you agree to the practices described below.
+        </p>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Information We Collect</h3>
+          <p>
+            When you submit an enquiry form, contact us by phone or email, or otherwise interact with Property Movement Realty, we may collect: your name, phone number, email address, the property category you are interested in, and any details you choose to share about your requirements.
+          </p>
+          <p>
+            We do not request or store sensitive financial information such as card numbers or bank details through this website. Payments and transactions are not processed on this site.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">How We Use Your Information</h3>
+          <p>
+            We use the information you provide to respond to your enquiry, understand your property requirements, and contact you about the assistance you requested. We may also use it to improve our consultancy services and communications with you.
+          </p>
+          <p>
+            We do not present property listings, prices, or addresses on this website, and we do not use your information to publish any public listings.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Sharing of Information</h3>
+          <p>
+            Your enquiry details are stored privately and are not displayed publicly. We do not sell or rent your personal information. We may share information with trusted team members or service providers who help us operate our consultancy, only to the extent necessary to respond to you.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Data Retention</h3>
+          <p>
+            We retain your enquiry information for as long as is necessary to respond to your request and to maintain records of our communications, in accordance with applicable legal requirements.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Your Rights</h3>
+          <p>
+            You may request access to, correction of, or deletion of the personal information you have shared with us. To exercise these rights, contact us at <a href="mailto:info@propertymovement.in">info@propertymovement.in</a> or <a href="tel:+918054367557">+91 80543 67557</a>.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Contact Us</h3>
+          <p>If you have any questions about this Privacy Policy, please contact Property Movement Realty at:</p>
+          <div class="policy-contact-box">
+            <p><strong>Email:</strong> <a href="mailto:info@propertymovement.in">info@propertymovement.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918054367557">+91 80543 67557</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#close-modal" class="btn-close-modal">Understood</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Pure CSS Terms of Service Modal Window
+       ========================================================================== -->
+  <aside class="policy-modal" id="terms-of-service" role="dialog" aria-modal="true" aria-labelledby="terms-modal-title">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal"></a>
+    
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-header">
+        <div class="modal-eyebrow">
+          <svg viewBox="0 0 24 24" style="fill:var(--color-gold-mid);"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+          <span>Legal Agreement</span>
+        </div>
+        <h2 class="modal-title" id="terms-modal-title">Terms of Service</h2>
+      </div>
+
+      <div class="modal-body">
+        <p class="policy-intro">
+          These Terms of Service govern your use of the Property Movement Realty website and the consultancy services we offer. By accessing this website or submitting an enquiry, you agree to these terms.
+        </p>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Our Services</h3>
+          <p>
+            Property Movement Realty is a real estate consultancy. We help residential buyers, commercial and industrial property seekers, and farmer land buyers explore property opportunities and understand their options.
+          </p>
+          <p>
+            This website does not display property listings, prices, addresses, or availability. All assistance is provided through direct conversation after you submit an enquiry.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">No Listings or Prices</h3>
+          <p>
+            No property listings, prices, addresses, or availability details are presented on this website. Any property information discussed is shared privately during consultation and should be independently verified by you before making any decision.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Use of the Website</h3>
+          <p>
+            You agree to use this website lawfully and to provide accurate, truthful information when submitting an enquiry. You agree not to misuse the site, submit false or misleading information, or attempt to disrupt its operation.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">No Professional Advice</h3>
+          <p>
+            Information provided by Property Movement Realty is general guidance to help you explore property options. It is not legal, financial, tax, or valuation advice. You should consult qualified professionals before making any property-related decision.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Limitation of Liability</h3>
+          <p>
+            Property Movement Realty is not liable for any losses or damages arising from your use of this website or reliance on information shared during consultation, except to the extent required by applicable law.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Changes to These Terms</h3>
+          <p>
+            We may update these Terms of Service from time to time. The updated version will be posted on this page with a revised date.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Contact Us</h3>
+          <p>For questions about these Terms of Service, contact Property Movement Realty at:</p>
+          <div class="policy-contact-box">
+            <p><strong>Email:</strong> <a href="mailto:info@propertymovement.in">info@propertymovement.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918054367557">+91 80543 67557</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#close-modal" class="btn-close-modal">Understood</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Pure CSS Refund Policy Modal Window
+       ========================================================================== -->
+  <aside class="policy-modal" id="refund-policy" role="dialog" aria-modal="true" aria-labelledby="refund-modal-title">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal"></a>
+    
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-header">
+        <div class="modal-eyebrow">
+          <svg viewBox="0 0 24 24" style="fill:var(--color-gold-mid);"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 14h-2v-2h2v2zm0-4h-2V7h2v5z"/></svg>
+          <span>Service Policy</span>
+        </div>
+        <h2 class="modal-title" id="refund-modal-title">Refund Policy</h2>
+      </div>
+
+      <div class="modal-body">
+        <p class="policy-intro">
+          Property Movement Realty provides real estate consultancy services. Ordering, checkout, and payments are not processed through this website. This Refund Policy explains our approach to refunds for any services that may involve a fee.
+        </p>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">No Payments on This Website</h3>
+          <p>
+            This website does not accept payments, process orders, or handle checkout. Submitting an enquiry is free of charge and does not constitute a purchase.
+          </p>
+          <p>
+            If any consultancy service involves a fee, the terms, amount, and refund conditions will be agreed with you separately and in writing before any payment is made.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Refund Eligibility</h3>
+          <p>
+            Where a fee has been separately agreed for a specific service, refund eligibility will depend on the stage of the engagement and the terms documented in that agreement. Any applicable refund will be processed using the original payment method where possible.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">How to Request a Refund</h3>
+          <p>
+            To request a refund or discuss a charge, contact us at <a href="mailto:info@propertymovement.in">info@propertymovement.in</a> or <a href="tel:+918054367557">+91 80543 67557</a> with the details of your engagement. We will review your request and respond within a reasonable timeframe.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Contact Us</h3>
+          <p>For any refund-related questions, contact Property Movement Realty at:</p>
+          <div class="policy-contact-box">
+            <p><strong>Email:</strong> <a href="mailto:info@propertymovement.in">info@propertymovement.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918054367557">+91 80543 67557</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#close-modal" class="btn-close-modal">Understood</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Pure CSS RCS Policy Modal Window
+       ========================================================================== -->
+  <aside class="policy-modal" id="rcs-policy" role="dialog" aria-modal="true" aria-labelledby="rcs-modal-title">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal"></a>
+    
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-header">
+        <div class="modal-eyebrow">
+          <svg viewBox="0 0 24 24" style="fill:#2563eb;"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm0 14H5.17L4 17.17V4h16v12z"/><path d="M7 9h10v2H7zm0-3h10v2H7z"/></svg>
+          <span>Communication Policy</span>
+        </div>
+        <h2 class="modal-title" id="rcs-modal-title">RCS Policy</h2>
+      </div>
+
+      <div class="modal-body">
+        <p class="policy-intro">
+          Property Movement Realty may use Rich Communication Services (RCS) messaging to respond to your enquiries and share relevant property guidance. This RCS Policy explains how we use RCS and your choices.
+        </p>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Use of RCS Messaging</h3>
+          <p>
+            We may use RCS to communicate with you about your enquiry, to understand your property requirements, and to provide consultancy support. RCS messages may include text, images, and suggested actions to make our conversation more helpful.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">When We Message You</h3>
+          <p>
+            We send RCS messages only in response to your enquiry or to follow up on a conversation you have started with us. We do not send unsolicited promotional RCS messages without your consent.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Message and Data Rates</h3>
+          <p>
+            RCS messaging may use your mobile data plan. Message and data rates may apply depending on your carrier. Check with your mobile provider for details.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Your Choices</h3>
+          <p>
+            You can stop receiving RCS messages from us at any time by replying <strong>STOP</strong> or by contacting us using the details below. You may also manage your messaging preferences through your device settings.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Contact Us</h3>
+          <p>For questions about our RCS messaging, contact Property Movement Realty at:</p>
+          <div class="policy-contact-box">
+            <p><strong>Email:</strong> <a href="mailto:info@propertymovement.in">info@propertymovement.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918054367557">+91 80543 67557</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#close-modal" class="btn-close-modal">Understood</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       Pure CSS WhatsApp Opt-in & Opt-out Policy Modal Window
+       ========================================================================== -->
+  <aside class="policy-modal" id="whatsapp-policy" role="dialog" aria-modal="true" aria-labelledby="whatsapp-modal-title">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal"></a>
+    
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-header">
+        <div class="modal-eyebrow">
+          <svg viewBox="0 0 24 24"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm.01 1.67c2.2 0 4.26.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.82c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24zm-3.53 4.2c-.19 0-.49.07-.75.35-.26.27-1 1-1 2.43s1.03 2.82 1.17 3.01c.14.19 2.01 3.14 4.92 4.36.69.29 1.23.46 1.65.6.7.22 1.33.19 1.83.11.56-.08 1.72-.7 1.96-1.38.25-.68.25-1.27.17-1.39-.07-.12-.28-.19-.59-.34-.31-.15-1.82-.9-2.1-.99-.28-.1-.49-.15-.7.15-.21.31-.81.99-.99 1.2-.18.21-.36.23-.67.08-.31-.15-1.31-.48-2.5-1.54-.93-.82-1.55-1.84-1.74-2.15-.18-.31-.02-.48.13-.63.14-.14.31-.36.47-.54.16-.18.21-.31.31-.51.1-.21.05-.39-.03-.54-.08-.15-.7-1.68-.96-2.3-.25-.6-.5-.52-.7-.53h-.6z"/></svg>
+          <span>Communication Policy</span>
+        </div>
+        <h2 class="modal-title" id="whatsapp-modal-title">WhatsApp Opt-in &amp; Opt-out Policy</h2>
+      </div>
+
+      <div class="modal-body">
+        <p class="policy-intro">
+          Property Movement Realty may use WhatsApp to respond to your enquiries and provide property consultancy support. This policy explains how we obtain your consent and how you can opt out.
+        </p>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Opting In</h3>
+          <p>
+            By submitting an enquiry with your phone number, contacting us via WhatsApp, or otherwise confirming that you would like us to contact you on WhatsApp, you consent to Property Movement Realty using WhatsApp to communicate with you about your property enquiry.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">How We Use WhatsApp</h3>
+          <p>
+            We use WhatsApp to respond to your enquiries, ask about your property requirements, and share relevant guidance. We do not use WhatsApp to send unsolicited promotional messages without your consent.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Opting Out</h3>
+          <p>
+            You can opt out of WhatsApp communications at any time by replying <strong>STOP</strong> to any message, by asking us directly in the conversation, or by contacting us using the details below. After you opt out, we will stop sending WhatsApp messages except where a response is necessary to complete an active enquiry.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Re-opting In</h3>
+          <p>
+            If you have opted out and would like to receive WhatsApp messages again, simply contact us and confirm that you would like to opt back in.
+          </p>
+        </div>
+
+        <div class="policy-block">
+          <h3 class="policy-heading">Contact Us</h3>
+          <p>For questions about our WhatsApp communications, contact Property Movement Realty at:</p>
+          <div class="policy-contact-box">
+            <p><strong>Email:</strong> <a href="mailto:info@propertymovement.in">info@propertymovement.in</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+918054367557">+91 80543 67557</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <a href="#close-modal" class="btn-close-modal">Understood</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       About Us - Learn More Interactive Pure CSS Modal
+       ========================================================================== -->
+  <aside id="about-info-modal" class="policy-modal" aria-label="Learn More About Property Movement Realty">
+    <a href="#close-modal" class="modal-overlay" aria-label="Close modal window"></a>
+    <div class="modal-content-card">
+      <a href="#close-modal" class="modal-close-btn" aria-label="Close dialog">&times;</a>
+      
+      <div class="modal-body" style="padding-top: 0.5rem;">
+        <h2 class="about-modal-headline" style="margin-top: 0;">
+          Property decisions deserve a helpful conversation, not a complicated process.
+        </h2>
+
+        <p class="about-modal-lead">
+          Property Movement Realty is a real estate consultancy helping residential buyers, commercial and industrial property seekers, and farmer land buyers explore property opportunities.
+        </p>
+
+        <p class="about-modal-lead">
+          We start by understanding what matters to you &mdash; your purpose, preferred location, and space requirements &mdash; so your search begins with a clear direction.
+        </p>
+
+        <div class="about-feature-points" style="margin-top: 1.5rem; border-top: 1px solid rgba(0, 0, 0, 0.08); padding-top: 1.25rem;">
+          <div class="about-point-item">
+            <svg viewBox="0 0 24 24" class="check-icon" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Guidance around your requirements</span>
+          </div>
+          <div class="about-point-item">
+            <svg viewBox="0 0 24 24" class="check-icon" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>A straightforward, approachable conversation</span>
+          </div>
+          <div class="about-point-item">
+            <svg viewBox="0 0 24 24" class="check-icon" aria-hidden="true">
+              <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+            <span>Support across four property categories</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="margin-top: 1.75rem;">
+        <a href="#contact" class="btn-close-modal" style="background: var(--grad-gold); color: #ffffff; border: none;">Get in Touch</a>
+      </div>
+    </div>
+  </aside>
+
+</body>
+</html>

@@ -1,0 +1,240 @@
+/* ==========================================================================
+   Policy & Legal Modal Styles
+   Matches Luxury Gold Theme, 100% Pure CSS (No JS)
+   ========================================================================== */
+
+/* Target CSS pseudo-class modal window */
+.policy-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Modal is shown when targeted by URL hash, e.g. #whatsapp-policy */
+.policy-modal:target {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+/* Dark Frosted Backdrop */
+.modal-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(15, 19, 25, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  cursor: default;
+}
+
+/* Modal Content Card */
+.modal-content-card {
+  position: relative;
+  z-index: 10;
+  background: #ffffff;
+  border-radius: var(--radius-card);
+  max-width: 680px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: clamp(1.5rem, 3.5vw, 2.75rem);
+  box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.3), 0 0 0 1px rgba(220, 168, 61, 0.35);
+  animation: modalPop 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes modalPop {
+  0% {
+    transform: scale(0.92) translateY(15px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Close Button (X icon) */
+.modal-close-btn {
+  position: absolute;
+  top: 1.25rem;
+  right: 1.25rem;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f3f4f6;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #4b5563;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1;
+  transition: var(--transition);
+}
+
+.modal-close-btn:hover {
+  background: var(--grad-gold);
+  color: #ffffff;
+  transform: rotate(90deg);
+}
+
+/* Header & Eyebrow */
+.modal-header {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(220, 168, 61, 0.25);
+  padding-right: 2.5rem;
+}
+
+.modal-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--color-gold-mid);
+  margin-bottom: 0.45rem;
+}
+
+.modal-eyebrow svg {
+  width: 16px;
+  height: 16px;
+  fill: #25d366; /* WhatsApp brand green accent */
+}
+
+.modal-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  font-weight: 700;
+  color: #121820;
+  line-height: 1.25;
+}
+
+/* Body Content */
+.modal-body {
+  color: #374151;
+  font-size: 0.95rem;
+  line-height: 1.68;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.policy-intro {
+  font-size: 1rem;
+  color: #1f2937;
+  font-weight: 500;
+  background-color: #fdfaf3;
+  padding: 0.95rem 1.15rem;
+  border-left: 3px solid var(--color-gold-mid);
+  border-radius: 4px;
+}
+
+.policy-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.policy-heading {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #111827;
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.policy-heading::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-gold-mid);
+}
+
+.policy-contact-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin-top: 0.5rem;
+}
+
+.policy-contact-box a {
+  color: var(--color-gold-mid);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.policy-contact-box a:hover {
+  color: #8a5e12;
+}
+
+/* Modal Footer Action */
+.modal-footer {
+  margin-top: 1.75rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.btn-close-modal {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.65rem 1.6rem;
+  background: var(--grad-gold);
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-btn);
+  transition: var(--transition);
+}
+
+.btn-close-modal:hover {
+  background: var(--grad-gold-hover);
+  box-shadow: var(--shadow-btn-hover);
+  transform: translateY(-1px);
+}
+
+/* Responsive Breakpoints */
+@media screen and (max-width: 580px) {
+  .modal-content-card {
+    padding: 1.5rem 1.25rem;
+    max-height: 90vh;
+  }
+  .modal-header {
+    padding-right: 2rem;
+  }
+  .modal-close-btn {
+    top: 1rem;
+    right: 1rem;
+    width: 32px;
+    height: 32px;
+  }
+  .btn-close-modal {
+    width: 100%;
+    justify-content: center;
+  }
+}

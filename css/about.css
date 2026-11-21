@@ -1,0 +1,284 @@
+/* ==========================================================================
+   About Us Section (Your Trusted Real Estate Partner)
+   Matches Luxury Gold Real Estate Theme & Image Layout
+   ========================================================================== */
+
+.about-section {
+  position: relative;
+  background-color: var(--bg-cream);
+  padding: clamp(4rem, 7vw, 7rem) 0;
+  overflow: hidden;
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  align-items: center;
+  gap: clamp(2rem, 4.5vw, 4.5rem);
+}
+
+/* Left Image Container with Elegant Golden Arc Cut */
+.about-image-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.about-image-mask {
+  position: relative;
+  width: 100%;
+  height: clamp(340px, 38vw, 440px);
+  border-radius: 20px 140px 20px 20px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px -10px rgba(27, 21, 10, 0.16);
+  z-index: 2;
+}
+
+.about-image-mask img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.about-image-wrapper:hover .about-image-mask img {
+  transform: scale(1.04);
+}
+
+/* Golden Ribbon Arc Border Accent */
+.about-arc-accent {
+  position: absolute;
+  top: -12px;
+  right: -12px;
+  width: 100%;
+  height: 100%;
+  border-radius: 24px 150px 24px 24px;
+  border: 2px solid rgba(220, 168, 61, 0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Decorative Golden Ribbon Swoosh in Background */
+.about-bg-ribbon {
+  position: absolute;
+  top: 15%;
+  left: 30%;
+  width: 450px;
+  height: 350px;
+  opacity: 0.35;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Right Content Column */
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: clamp(0.72rem, 1vw, 0.82rem);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--color-gold-mid);
+  margin-bottom: 0.85rem;
+}
+
+.about-eyebrow-line {
+  display: inline-block;
+  width: 32px;
+  height: 2px;
+  background: var(--grad-gold);
+  border-radius: 2px;
+}
+
+.about-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 3.5vw, 2.9rem);
+  font-weight: 700;
+  line-height: 1.15;
+  color: #121820;
+  margin-bottom: 1.15rem;
+  letter-spacing: -0.5px;
+}
+
+.about-desc {
+  font-size: clamp(0.92rem, 1.25vw, 1.05rem);
+  color: var(--color-text-muted);
+  line-height: 1.65;
+  margin-bottom: 2rem;
+  max-width: 540px;
+}
+
+.btn-learn-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.8rem 2rem;
+  background: var(--grad-gold);
+  color: #ffffff;
+  font-size: 0.92rem;
+  font-weight: 600;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-btn);
+  transition: var(--transition);
+  margin-bottom: 2.5rem;
+}
+
+.btn-learn-more svg {
+  width: 14px;
+  height: 14px;
+  transition: transform 0.25s ease;
+}
+
+.btn-learn-more:hover {
+  background: var(--grad-gold-hover);
+  box-shadow: var(--shadow-btn-hover);
+  transform: translateY(-2px);
+}
+
+.btn-learn-more:hover svg {
+  transform: translateX(4px);
+}
+
+/* ==========================================================================
+   About Extended Statement & Feature Checkpoints
+   ========================================================================== */
+.about-statement-title,
+.about-modal-headline {
+  font-family: var(--font-heading);
+  font-size: clamp(1.4rem, 2.2vw, 1.85rem);
+  font-weight: 700;
+  color: #121820;
+  line-height: 1.25;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.3px;
+}
+
+.about-statement-text,
+.about-modal-lead {
+  font-size: clamp(0.95rem, 1.25vw, 1.05rem);
+  color: #4b5563;
+  line-height: 1.65;
+  margin-bottom: 1.15rem;
+}
+
+.about-feature-points {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.about-point-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  font-size: clamp(0.9rem, 1.15vw, 0.98rem);
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.about-point-item .check-icon {
+  width: 18px;
+  height: 18px;
+  stroke: var(--color-gold-mid);
+  stroke-width: 2.5;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+/* Bottom Stats Row */
+.about-stats-row {
+  display: flex;
+  align-items: center;
+  gap: clamp(1.5rem, 3.5vw, 3.5rem);
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(220, 195, 150, 0.35);
+  flex-wrap: wrap;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-icon {
+  width: 38px;
+  height: 38px;
+  margin-bottom: 0.45rem;
+  color: var(--color-gold-mid);
+}
+
+.stat-icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: var(--color-gold-mid);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.stat-number {
+  font-family: var(--font-heading);
+  font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+  font-weight: 800;
+  color: #121820;
+  line-height: 1.1;
+  margin-bottom: 0.2rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   Responsive Breakpoints for About Section
+   ========================================================================== */
+@media screen and (max-width: 960px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-image-wrapper {
+    max-width: 580px;
+    margin: 0 auto;
+  }
+
+  .about-image-mask {
+    height: 320px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .about-image-mask {
+    border-radius: 16px 80px 16px 16px;
+    height: 260px;
+  }
+
+  .about-arc-accent {
+    border-radius: 18px 90px 18px 18px;
+  }
+
+  .about-stats-row {
+    justify-content: space-between;
+    gap: 1.5rem;
+  }
+
+  .btn-learn-more {
+    width: 100%;
+    justify-content: center;
+  }
+}

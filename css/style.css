@@ -1,0 +1,15 @@
+/* ==========================================================================
+   Master Stylesheet Aggregator
+   ========================================================================== */
+@import url('global.css');
+@import url('navbar.css');
+@import url('hero.css');
+@import url('features.css');
+@import url('properties.css');
+@import url('services.css');
+@import url('about.css');
+@import url('testimonials.css');
+@import url('contact.css');
+@import url('whatsapp.css');
+@import url('footer.css');
+@import url('modal.css');
